@@ -5,9 +5,9 @@ data(mtcars)
 minwt <- round(min(mtcars$wt),2)
 maxwt <- round(max(mtcars$wt),2)
 avgwt <- round(mean(mtcars$wt),2)
-minhp <- min(mtcars$hp)
-maxhp <- max(mtcars$hp)
-avghp <- mean(mtcars$hp)
+minhp <- round(min(mtcars$hp),0)
+maxhp <- round(max(mtcars$hp),0)
+avghp <- round(mean(mtcars$hp),0)
 
 shinyUI(fluidPage(
   
